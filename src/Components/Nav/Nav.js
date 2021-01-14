@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () =>{
 	return (
@@ -6,23 +7,13 @@ const Nav = () =>{
 				 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="navbar-toggler-icon"></span>
-				</button> <a class="navbar-brand" href="#">Accounts and Balances</a>
+				</button> <Link class="navbar-brand" to="/">Accounts and Balances</Link>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
-							 <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
-						</li>
 						<li class="nav-item">
-							 <a class="nav-link" href="#">Link</a>
+							 <Link class="nav-link" to="bnl">Balance Sheet</Link>
 						</li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</li>
+						
 					</ul>
 					<form class="form-inline">
 						<input class="form-control mr-sm-2" type="text" /> 
